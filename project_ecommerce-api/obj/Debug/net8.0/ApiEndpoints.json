@@ -1,0 +1,95 @@
+[
+  {
+    "ContainingType": "project_ecommerce_api.Controllers.AddressShopController",
+    "Method": "GetAddressShops",
+    "RelativePath": "api/AddressShop/GetAddressShops",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project_ecommerce_api.Controllers.CategoryController",
+    "Method": "GetCategoriesByLevel",
+    "RelativePath": "api/Category/GetCategoriesByLevel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "level",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project_ecommerce_api.Controllers.CategoryController",
+    "Method": "GetCategoriesLevel2",
+    "RelativePath": "api/Category/GetCategoriesLevel2",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project_ecommerce_api.Controllers.ProductController",
+    "Method": "Index",
+    "RelativePath": "api/Product",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project_ecommerce_api.Controllers.ProductController",
+    "Method": "GetFlashSale",
+    "RelativePath": "api/Product/GetFlashSale",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project_ecommerce_api.Controllers.ProductController",
+    "Method": "GetProducts",
+    "RelativePath": "api/Product/GetProducts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project_ecommerce_api.Controllers.ProductController",
+    "Method": "GetProductsByCategory",
+    "RelativePath": "api/Product/GetProductsByCategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
