@@ -63,6 +63,22 @@
   },
   {
     "ContainingType": "project_ecommerce_api.Controllers.ProductController",
+    "Method": "GetProductByName",
+    "RelativePath": "api/Product/GetProductByName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project_ecommerce_api.Controllers.ProductController",
     "Method": "GetProducts",
     "RelativePath": "api/Product/GetProducts",
     "HttpMethod": "GET",

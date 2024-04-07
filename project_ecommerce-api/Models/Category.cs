@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace project_ecommerce_api.Models;
+namespace project_ecommerce_api.Data;
 
 public partial class Category
 {
@@ -12,6 +12,8 @@ public partial class Category
     public string? CategoryId { get; set; }
 
     public int Level { get; set; }
+
+    public string? Icon { get; set; }
 
     public virtual ICollection<Product> Products { get; set; } = new List<Product>();
 }

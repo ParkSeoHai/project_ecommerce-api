@@ -29,9 +29,9 @@ namespace project_ecommerce_api.Controllers
                 var products = await productService.GetProductsAsync();
                 return Ok(products);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
         }
 
@@ -44,9 +44,9 @@ namespace project_ecommerce_api.Controllers
                 var products = await productService.GetProductsByCategoryAsync(name, limit);
                 return Ok(products);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
         }
 
@@ -59,9 +59,24 @@ namespace project_ecommerce_api.Controllers
                 var flashSale = await productService.GetFlashSaleAsync();
                 return Ok(flashSale);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
+            }
+        }
+
+        [HttpGet]
+        [Route("GetProductByName")]
+        public async Task<IActionResult> GetProductByName(string name)
+        {
+            try
+            {
+                var product = await productService.GetProductByNameAsync(name);
+                return Ok(product);
+            }
+            catch (Exception)
+            {
+                throw;
             }
         }
     }

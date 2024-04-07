@@ -7,33 +7,16 @@
       "RelativeMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|solutionrelative:project_ecommerce-api\\repositories\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|solutionrelative:project_ecommerce-api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\repositories\\interface\\icategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|solutionrelative:project_ecommerce-api\\repositories\\interface\\icategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\dtos\\productviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|solutionrelative:project_ecommerce-api\\dtos\\productviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\repositories\\service\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|solutionrelative:project_ecommerce-api\\repositories\\service\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\dtos\\flashsaleitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|solutionrelative:project_ecommerce-api\\dtos\\flashsaleitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\dtos\\flashsaledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|solutionrelative:project_ecommerce-api\\dtos\\flashsaledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\anhha\\AppData\\Local\\Temp\\4o0nbshq..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|solutionrelative:project_ecommerce-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\anhha\\AppData\\Local\\Temp\\4o0nbshq..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\anhha\\AppData\\Local\\Temp\\4o0nbshq..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
+      "AbsoluteMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\dtos\\productdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|solutionrelative:project_ecommerce-api\\dtos\\productdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -71,38 +54,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SQLQuery1.sql ",
-              "DocumentMoniker": "C:\\Users\\anhha\\AppData\\Local\\Temp\\4o0nbshq..sql",
-              "ToolTip": "SQLQuery1.sql *",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-03-27T15:18:08.561Z",
+              "DocumentIndex": 1,
+              "Title": "ICategory.cs",
+              "DocumentMoniker": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Repositories\\Interface\\ICategory.cs",
+              "RelativeDocumentMoniker": "project_ecommerce-api\\Repositories\\Interface\\ICategory.cs",
+              "ToolTip": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Repositories\\Interface\\ICategory.cs",
+              "RelativeToolTip": "project_ecommerce-api\\Repositories\\Interface\\ICategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T02:57:09.539Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FlashSaleDto.cs",
-              "DocumentMoniker": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\DTOs\\FlashSaleDto.cs",
-              "RelativeDocumentMoniker": "project_ecommerce-api\\DTOs\\FlashSaleDto.cs",
-              "ToolTip": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\DTOs\\FlashSaleDto.cs",
-              "RelativeToolTip": "project_ecommerce-api\\DTOs\\FlashSaleDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABiAAAA",
+              "DocumentIndex": 2,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Repositories\\Service\\CategoryService.cs",
+              "RelativeDocumentMoniker": "project_ecommerce-api\\Repositories\\Service\\CategoryService.cs",
+              "ToolTip": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Repositories\\Service\\CategoryService.cs",
+              "RelativeToolTip": "project_ecommerce-api\\Repositories\\Service\\CategoryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T04:06:31.327Z",
+              "WhenOpened": "2024-04-07T02:32:26.593Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FlashSaleItemDto.cs",
-              "DocumentMoniker": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\DTOs\\FlashSaleItemDto.cs",
-              "RelativeDocumentMoniker": "project_ecommerce-api\\DTOs\\FlashSaleItemDto.cs",
-              "ToolTip": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\DTOs\\FlashSaleItemDto.cs",
-              "RelativeToolTip": "project_ecommerce-api\\DTOs\\FlashSaleItemDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Title": "ProductDetailDto.cs",
+              "DocumentMoniker": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\DTOs\\ProductDetailDto.cs",
+              "RelativeDocumentMoniker": "project_ecommerce-api\\DTOs\\ProductDetailDto.cs",
+              "ToolTip": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\DTOs\\ProductDetailDto.cs",
+              "RelativeToolTip": "project_ecommerce-api\\DTOs\\ProductDetailDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T04:04:08.291Z",
+              "WhenOpened": "2024-03-29T02:52:19.119Z",
               "EditorCaption": ""
             },
             {
@@ -113,48 +99,9 @@
               "RelativeDocumentMoniker": "project_ecommerce-api\\Repositories\\Service\\ProductService.cs",
               "ToolTip": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Repositories\\Service\\ProductService.cs",
               "RelativeToolTip": "project_ecommerce-api\\Repositories\\Service\\ProductService.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAJAAAAAJAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T11:06:31.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "project_ecommerce-api\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "project_ecommerce-api\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAcwCsAAABOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T07:26:56.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductViewDto.cs",
-              "DocumentMoniker": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\DTOs\\ProductViewDto.cs",
-              "RelativeDocumentMoniker": "project_ecommerce-api\\DTOs\\ProductViewDto.cs",
-              "ToolTip": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\DTOs\\ProductViewDto.cs",
-              "RelativeToolTip": "project_ecommerce-api\\DTOs\\ProductViewDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T11:06:40.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Program.cs",
-              "RelativeDocumentMoniker": "project_ecommerce-api\\Program.cs",
-              "ToolTip": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Program.cs",
-              "RelativeToolTip": "project_ecommerce-api\\Program.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAABYAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T17:11:11.954Z",
               "EditorCaption": ""
             }
           ]

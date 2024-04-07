@@ -21,6 +21,11 @@ builder.Services.AddScoped<IProduct, ProductService>();
 builder.Services.AddScoped<IProductColor, ProductColorService>();
 builder.Services.AddScoped<ICategory, CategoryService>();
 builder.Services.AddScoped<IAddressShop, AddressShopService>();
+builder.Services.AddScoped<IProductOption, ProductOptionService>();
+builder.Services.AddScoped<IProductShop, ProductShopService>();
+builder.Services.AddScoped<IProperty, PropertyService>();
+builder.Services.AddScoped<IBrand, BrandService>();
+builder.Services.AddScoped<IProductImage, ProductImageService>();
 
 var app = builder.Build();
 

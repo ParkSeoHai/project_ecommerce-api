@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using project_ecommerce_api.Models;
 
 namespace project_ecommerce_api.Data;
 
@@ -94,6 +93,7 @@ public partial class ApplicationDbContext : DbContext
             entity.HasIndex(e => e.Name, "IX_Categories_Name").IsUnique();
 
             entity.Property(e => e.Id).ValueGeneratedNever();
+            entity.Property(e => e.Icon).HasMaxLength(500);
         });
 
         modelBuilder.Entity<Color>(entity =>
@@ -154,7 +154,7 @@ public partial class ApplicationDbContext : DbContext
             entity.HasIndex(e => e.ProductId, "IX_Images_ProductId");
 
             entity.Property(e => e.Id).ValueGeneratedNever();
-            entity.Property(e => e.Src).HasMaxLength(255);
+            entity.Property(e => e.Src).HasMaxLength(500);
 
             entity.HasOne(d => d.Product).WithMany(p => p.Images).HasForeignKey(d => d.ProductId);
         });

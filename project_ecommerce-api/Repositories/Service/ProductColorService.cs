@@ -16,6 +16,13 @@ namespace project_ecommerce_api.Repositories.Service
 
         public async Task<List<ProductColorDto>> GetColorsByProductIdAsync(Guid productId)
         {
+            // Find product
+            var product = await context.Products.FindAsync(productId);
+            if(product == null)
+            {
+                throw new Exception("Product not found");
+            }
+
             List<ProductColorDto> colorsDto = new List<ProductColorDto>();
 
             // Query database
@@ -32,6 +39,10 @@ namespace project_ecommerce_api.Repositories.Service
                     Quantity = color.Quantity,
                     ProductId = productId,
                 };
+                // Calc price sale
+                double priceSale = productColorDto.Price - (productColorDto.Price * product.Discount / 100);
+                productColorDto.PriceSale = priceSale;
+                // Add to list
                 colorsDto.Add(productColorDto);
             }
 

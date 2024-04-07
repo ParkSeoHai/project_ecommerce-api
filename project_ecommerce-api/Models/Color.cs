@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace project_ecommerce_api.Models;
+namespace project_ecommerce_api.Data;
 
 public partial class Color
 {

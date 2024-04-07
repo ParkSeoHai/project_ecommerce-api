@@ -9,5 +9,7 @@
         public string? CategoryId { get; set; }
 
         public int Level { get; set; }
+
+        public string? Icon { get; set; }
     }
 }

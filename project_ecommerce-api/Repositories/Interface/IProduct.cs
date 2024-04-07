@@ -6,6 +6,7 @@ namespace project_ecommerce_api.Repositories.Interface
     {
         Task<List<ProductViewDto>> GetProductsAsync();
         Task<List<ProductViewDto>> GetProductsByCategoryAsync(string categoryName, int limit);
+        Task<ProductDetailDto> GetProductByNameAsync(string name);
         Task<FlashSaleDto> GetFlashSaleAsync();
     }
 }

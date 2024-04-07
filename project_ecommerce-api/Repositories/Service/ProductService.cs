@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using project_ecommerce_api.Data;
 using project_ecommerce_api.DTOs;
-using project_ecommerce_api.Models;
 using project_ecommerce_api.Repositories.Interface;
 
 namespace project_ecommerce_api.Repositories.Service
@@ -10,11 +9,26 @@ namespace project_ecommerce_api.Repositories.Service
     {
         private readonly ApplicationDbContext context;
         private readonly IProductColor colorService;
+        private readonly IProductOption optionService;
+        private readonly IProductShop productShopService;
+        private readonly IProperty propertyService;
+        private readonly ICategory categoryService;
+        private readonly IBrand brandService;
+        private readonly IProductImage productImageService;
 
-        public ProductService(ApplicationDbContext context, IProductColor colorService)
+        public ProductService(ApplicationDbContext context, IProductColor colorService,
+            IProductOption optionService, IProductShop productShopService,
+            IProperty propertyService, ICategory categoryService,
+            IBrand brandService, IProductImage productImageService)
         {
             this.context = context;
             this.colorService = colorService;
+            this.optionService = optionService;
+            this.productShopService = productShopService;
+            this.propertyService = propertyService;
+            this.categoryService = categoryService;
+            this.brandService = brandService;
+            this.productImageService = productImageService;
         }
 
         public async Task<List<ProductViewDto>> GetProductsAsync()
@@ -44,7 +58,6 @@ namespace project_ecommerce_api.Repositories.Service
                     // Calc price sale
                     double priceSale = productViewDto.Price - (productViewDto.Price * productViewDto.Discount / 100);
                     productViewDto.PriceSale = priceSale;
-
                     // Add to list
                     productViewDtos.Add(productViewDto);
                 }
@@ -132,7 +145,6 @@ namespace project_ecommerce_api.Repositories.Service
                     // Calc price sale
                     double priceSale = productDto.Price - (productDto.Price * productDto.Discount / 100);
                     productDto.PriceSale = priceSale;
-
                     productViewDtos.Add(productDto);
                 }
 
@@ -190,11 +202,78 @@ namespace project_ecommerce_api.Repositories.Service
                 // Calc price sale
                 double priceSale = flashSaleItem.Price - (flashSaleItem.Price * flashSaleItem.Discount / 100);
                 flashSaleItem.PriceSale = priceSale;
-
+                // Get url
+                /*string url = "/Sản phẩm/";
+                var categories = await categoryService.GetCategoriesByIdAsync(item.Product.CategoryId);
+                foreach (var category in categories)
+                {
+                    url += category.Name + "/";
+                }
+                flashSaleItem.Url = url + flashSaleItem.Name;*/
                 flashSaleDto.FlashSaleItems.Add(flashSaleItem);
             }
 
             return flashSaleDto;
+        }
+
+        public async Task<ProductDetailDto> GetProductByNameAsync(string name)
+        {
+            try
+            {
+                // Find product by name
+                Product? product = await context.Products
+                    .Where(p => p.Name.ToUpper() == name.ToUpper())
+                    .FirstOrDefaultAsync();
+
+                if(product == null)
+                {
+                    throw new Exception("Product not found");
+                }
+                // Convert to product dto
+                var productDto = new ProductDetailDto()
+                {
+                    Id = product.Id,
+                    Name = product.Name,
+                    DefaultImage = product.DefaultImage,
+                    Description = product.Description,
+                    Discount = product.Discount,
+                    Price = product.Price,
+                    Quantity = product.Quantity
+                };
+                // Get brand
+                var brand = await brandService.GetBrandByIdAsycn(product.BrandId);
+                productDto.Brand = brand;
+                // Get categories
+                productDto.Categories = await categoryService.GetCategoriesByIdAsync(product.CategoryId);
+                // Get image
+                var images = await productImageService.GetImagesByProductIdAsync(product.Id);
+                productDto.Images = images;
+                // Calc price sale
+                double priceSale = productDto.Price - (productDto.Price * productDto.Discount / 100);
+                productDto.PriceSale = priceSale;
+                // Get colors
+                productDto.Colors = await colorService.GetColorsByProductIdAsync(productDto.Id);
+                // Get options
+                foreach (var color in productDto.Colors)
+                {
+                    var options = await optionService.GetOptionsByColorAsync(color.Id);
+                    // Get product shops
+                    foreach (var option in options)
+                    {
+                        var productShops = await productShopService.GetProductShopByOptionAsync(option.Id);
+                        option.ProductShops = productShops;
+                    }
+                    color.Options = options;
+                }
+                // Get properties
+                var properties = await propertyService.GetPropertiesByProductIdAsync(productDto.Id);
+                productDto.Properties = properties;
+                return productDto;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }
