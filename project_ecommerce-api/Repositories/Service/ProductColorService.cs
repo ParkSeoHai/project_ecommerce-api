@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using project_ecommerce_api.Data;
 using project_ecommerce_api.DTOs;
+using project_ecommerce_api.Models;
 using project_ecommerce_api.Repositories.Interface;
 
 namespace project_ecommerce_api.Repositories.Service

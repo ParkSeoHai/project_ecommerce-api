@@ -42,6 +42,58 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "project_ecommerce_api.Controllers.CustomerController",
+    "Method": "Login",
+    "RelativePath": "api/Customer/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerDto",
+        "Type": "project_ecommerce_api.DTOs.CustomerLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "project_ecommerce_api.DTOs.ApiResponse\u00601[[project_ecommerce_api.DTOs.CustomerLoginResponse, project_ecommerce-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "project_ecommerce_api.Controllers.CustomerController",
+    "Method": "Register",
+    "RelativePath": "api/Customer/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerDto",
+        "Type": "project_ecommerce_api.DTOs.CustomerRegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "project_ecommerce_api.DTOs.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "project_ecommerce_api.Controllers.ProductController",
     "Method": "Index",
     "RelativePath": "api/Product",

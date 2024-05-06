@@ -148,3 +148,4 @@ D:\Workspace\Vue.js 3\project_ecommerce-api\project_ecommerce-api\obj\Debug\net8
 D:\Workspace\Vue.js 3\project_ecommerce-api\project_ecommerce-api\obj\Debug\net8.0\project_ecommerce-api.genruntimeconfig.cache
 D:\Workspace\Vue.js 3\project_ecommerce-api\project_ecommerce-api\obj\Debug\net8.0\ref\project_ecommerce-api.dll
 D:\Workspace\Vue.js 3\project_ecommerce-api\project_ecommerce-api\obj\Debug\net8.0\project_ecommerce-api.sourcelink.json
+D:\Workspace\Vue.js 3\project_ecommerce-api\project_ecommerce-api\bin\Debug\net8.0\BCrypt.Net-Next.dll

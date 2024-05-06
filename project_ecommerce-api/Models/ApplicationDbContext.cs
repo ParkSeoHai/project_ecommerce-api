@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace project_ecommerce_api.Data;
+namespace project_ecommerce_api.Models;
 
 public partial class ApplicationDbContext : DbContext
 {
@@ -113,14 +113,14 @@ public partial class ApplicationDbContext : DbContext
         {
             entity.HasIndex(e => e.Email, "IX_Customers_Email").IsUnique();
 
-            entity.HasIndex(e => e.EmailConfirmed, "IX_Customers_EmailConfirmed").IsUnique();
-
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.Email).HasMaxLength(255);
-            entity.Property(e => e.EmailConfirmed).HasMaxLength(255);
             entity.Property(e => e.FirstName).HasMaxLength(100);
             entity.Property(e => e.LastName).HasMaxLength(255);
             entity.Property(e => e.PasswordHash).HasMaxLength(1000);
+            entity.Property(e => e.PhoneNumber)
+                .HasMaxLength(15)
+                .HasDefaultValue("");
             entity.Property(e => e.Picture).HasMaxLength(255);
         });
 
@@ -129,6 +129,11 @@ public partial class ApplicationDbContext : DbContext
             entity.HasIndex(e => e.CustomerId, "IX_CustomerAddresses_CustomerId");
 
             entity.Property(e => e.Id).ValueGeneratedNever();
+            entity.Property(e => e.Address).HasMaxLength(500);
+            entity.Property(e => e.City).HasMaxLength(100);
+            entity.Property(e => e.CustomerName).HasMaxLength(255);
+            entity.Property(e => e.District).HasMaxLength(100);
+            entity.Property(e => e.PhoneNumber).HasMaxLength(15);
 
             entity.HasOne(d => d.Customer).WithMany(p => p.CustomerAddresses).HasForeignKey(d => d.CustomerId);
         });

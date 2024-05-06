@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "MIRI2XAyG/AhA9aMv8XklPZoz/nArBysgAfTlmbeQLU2xfhbN/iaj3QcVJR0OUczJzJPGVPBQ3ki+VugGForGw==",
+  "dgSpecHash": "KTL+ad1bn9oSpBityx5QdRTQTwvD2zDWFlDRvRRLE3+tLL1ioNIJJW6lyfnaFgjdzgkwmbH5Qg7CAnqCMzTBYA==",
   "success": true,
   "projectFilePath": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\project_ecommerce-api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anhha\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\anhha\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\anhha\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\anhha\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\anhha\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\anhha\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.4\\microsoft.codeanalysis.analyzers.3.3.4.nupkg.sha512",

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace project_ecommerce_api.Data;
+namespace project_ecommerce_api.Models;
 
 public partial class Cart
 {

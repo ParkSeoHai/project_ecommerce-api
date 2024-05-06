@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace project_ecommerce_api.Data;
+namespace project_ecommerce_api.Models;
 
 public partial class Customer
 {
@@ -13,8 +13,6 @@ public partial class Customer
 
     public string Email { get; set; } = null!;
 
-    public string EmailConfirmed { get; set; } = null!;
-
     public string PasswordHash { get; set; } = null!;
 
     public string Picture { get; set; } = null!;
@@ -22,6 +20,8 @@ public partial class Customer
     public bool IsActive { get; set; }
 
     public DateTime CreatedDate { get; set; }
+
+    public string PhoneNumber { get; set; } = null!;
 
     public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
 

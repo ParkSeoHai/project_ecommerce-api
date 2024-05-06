@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|d:\\workspace\\vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\repositories\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|solutionrelative:project_ecommerce-api\\repositories\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|d:\\workspace\\vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\repositories\\service\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|solutionrelative:project_ecommerce-api\\repositories\\service\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\repositories\\interface\\icategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|solutionrelative:project_ecommerce-api\\repositories\\interface\\icategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|solutionrelative:project_ecommerce-api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\repositories\\service\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|solutionrelative:project_ecommerce-api\\repositories\\service\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|d:\\workspace\\vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\dtos\\customerregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|solutionrelative:project_ecommerce-api\\dtos\\customerregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\dtos\\productdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|solutionrelative:project_ecommerce-api\\dtos\\productdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|d:\\workspace\\vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\dtos\\customerlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|solutionrelative:project_ecommerce-api\\dtos\\customerlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|d:\\workspace\\vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\repositories\\interface\\icustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FAA0722-F35B-45A5-AEC0-A08DC428D5D5}|project_ecommerce-api\\project_ecommerce-api.csproj|solutionrelative:project_ecommerce-api\\repositories\\interface\\icustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,54 +58,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ICategory.cs",
-              "DocumentMoniker": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Repositories\\Interface\\ICategory.cs",
-              "RelativeDocumentMoniker": "project_ecommerce-api\\Repositories\\Interface\\ICategory.cs",
-              "ToolTip": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Repositories\\Interface\\ICategory.cs",
-              "RelativeToolTip": "project_ecommerce-api\\Repositories\\Interface\\ICategory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T02:57:09.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Repositories\\Service\\CategoryService.cs",
-              "RelativeDocumentMoniker": "project_ecommerce-api\\Repositories\\Service\\CategoryService.cs",
-              "ToolTip": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Repositories\\Service\\CategoryService.cs",
-              "RelativeToolTip": "project_ecommerce-api\\Repositories\\Service\\CategoryService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIYAAAAFAAAA",
+              "Title": "CustomerRegisterDto.cs",
+              "DocumentMoniker": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\DTOs\\CustomerRegisterDto.cs",
+              "RelativeDocumentMoniker": "project_ecommerce-api\\DTOs\\CustomerRegisterDto.cs",
+              "ToolTip": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\DTOs\\CustomerRegisterDto.cs",
+              "RelativeToolTip": "project_ecommerce-api\\DTOs\\CustomerRegisterDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T02:32:26.593Z",
+              "WhenOpened": "2024-05-05T16:44:00.602Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ProductDetailDto.cs",
-              "DocumentMoniker": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\DTOs\\ProductDetailDto.cs",
-              "RelativeDocumentMoniker": "project_ecommerce-api\\DTOs\\ProductDetailDto.cs",
-              "ToolTip": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\DTOs\\ProductDetailDto.cs",
-              "RelativeToolTip": "project_ecommerce-api\\DTOs\\ProductDetailDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAxAAAA",
+              "Title": "CustomerLoginDto.cs",
+              "DocumentMoniker": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\DTOs\\CustomerLoginDto.cs",
+              "RelativeDocumentMoniker": "project_ecommerce-api\\DTOs\\CustomerLoginDto.cs",
+              "ToolTip": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\DTOs\\CustomerLoginDto.cs",
+              "RelativeToolTip": "project_ecommerce-api\\DTOs\\CustomerLoginDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T02:52:19.119Z",
+              "WhenOpened": "2024-05-05T14:33:38Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Repositories\\Service\\ProductService.cs",
-              "RelativeDocumentMoniker": "project_ecommerce-api\\Repositories\\Service\\ProductService.cs",
-              "ToolTip": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Repositories\\Service\\ProductService.cs",
-              "RelativeToolTip": "project_ecommerce-api\\Repositories\\Service\\ProductService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB8AAAAJAAAA",
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Repositories\\Service\\CustomerService.cs",
+              "RelativeDocumentMoniker": "project_ecommerce-api\\Repositories\\Service\\CustomerService.cs",
+              "ToolTip": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Repositories\\Service\\CustomerService.cs",
+              "RelativeToolTip": "project_ecommerce-api\\Repositories\\Service\\CustomerService.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAFwAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T11:06:31.428Z",
+              "WhenOpened": "2024-05-05T14:14:29.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICustomer.cs",
+              "DocumentMoniker": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Repositories\\Interface\\ICustomer.cs",
+              "RelativeDocumentMoniker": "project_ecommerce-api\\Repositories\\Interface\\ICustomer.cs",
+              "ToolTip": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Repositories\\Interface\\ICustomer.cs",
+              "RelativeToolTip": "project_ecommerce-api\\Repositories\\Interface\\ICustomer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T14:14:27.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "project_ecommerce-api\\Controllers\\CustomerController.cs",
+              "ToolTip": "D:\\Workspace\\Vue.js 3\\project_ecommerce-api\\project_ecommerce-api\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "project_ecommerce-api\\Controllers\\CustomerController.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAUwD0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T03:17:07.737Z",
               "EditorCaption": ""
             }
           ]
