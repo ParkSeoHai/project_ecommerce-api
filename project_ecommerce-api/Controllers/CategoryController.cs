@@ -30,5 +30,13 @@ namespace project_ecommerce_api.Controllers
             var categories = await categoryService.GetCategoriesLevel2Async(categoryName);
             return Ok(categories);
         }
+
+        [HttpGet]
+        [Route("GetCategoryByTextUrl")]
+        public async Task<IActionResult> GetCategoryByTextUrl(string textUrl)
+        {
+            var category = await categoryService.GetCategoryByTextUrlAsync(textUrl);
+            return Ok(category);
+        }
     }
 }

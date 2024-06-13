@@ -18,5 +18,7 @@ namespace project_ecommerce_api.DTOs
         public string DefaultImage { get; set; } = null!;
 
         public int ColorCount { get; set; }
+
+        public string TextUrl { get; set; } = null!;
     }
 }

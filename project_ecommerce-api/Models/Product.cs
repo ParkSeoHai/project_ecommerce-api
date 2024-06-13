@@ -33,6 +33,8 @@ public partial class Product
 
     public string DefaultImage { get; set; } = null!;
 
+    public string TextUrl { get; set; } = null!;
+
     public virtual Brand Brand { get; set; } = null!;
 
     public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();

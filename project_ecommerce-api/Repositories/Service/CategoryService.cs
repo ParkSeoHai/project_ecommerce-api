@@ -20,17 +20,22 @@ namespace project_ecommerce_api.Repositories.Service
             {
                 List<CategoryDto> categoriesDtos = new List<CategoryDto>();
                 // Query database
-                var categories = await context.Categories.Where(c => c.Level == level).ToListAsync();
+                var categories = await context.Categories
+                    .Where(c => c.Level == level && c.Publish == true)
+                    .OrderBy(c => c.Order)
+                    .ToListAsync();
 
                 foreach (var category in categories)
                 {
                     CategoryDto categoryDto = new CategoryDto()
                     {
                         Id = category.Id,
-                        Name = category.Name,
+                        Name = category.Name.Trim(),
                         Level = category.Level,
                         Icon = category.Icon,
-                        CategoryId = category.CategoryId
+                        CategoryId = category.CategoryId,
+                        Order = category.Order,
+                        TextUrl = category.TextUrl.Trim(),
                     };
                     categoriesDtos.Add(categoryDto);
                 }
@@ -48,7 +53,7 @@ namespace project_ecommerce_api.Repositories.Service
             {
                 // Query database
                 var categoryFind = await context.Categories
-                    .Where(c => c.Name.ToUpper() == categoryName.ToUpper())
+                    .Where(c => c.Name.ToUpper() == categoryName.ToUpper() && c.Publish == true)
                     .FirstOrDefaultAsync();
 
                 if (categoryFind == null)
@@ -67,10 +72,12 @@ namespace project_ecommerce_api.Repositories.Service
                     CategoryDto categoryDto = new CategoryDto()
                     {
                         Id = category.Id,
-                        Name = category.Name,
+                        Name = category.Name.Trim(),
                         Level = category.Level,
                         Icon = category.Icon,
-                        CategoryId = category.CategoryId
+                        CategoryId = category.CategoryId,
+                        Order = category.Order,
+                        TextUrl = category.TextUrl.Trim(),
                     };
                     categoriesDtos.Add(categoryDto);
                 }
@@ -96,10 +103,12 @@ namespace project_ecommerce_api.Repositories.Service
                 var categoryDto = new CategoryDto()
                 {
                     Id = category.Id,
-                    Name= category.Name,
+                    Name= category.Name.Trim(),
                     Level= category.Level,
                     Icon = category.Icon,
-                    CategoryId = category.CategoryId
+                    CategoryId = category.CategoryId,
+                    Order = category.Order,
+                    TextUrl = category.TextUrl.Trim(),
                 };
                 return categoryDto;
             }
@@ -131,6 +140,37 @@ namespace project_ecommerce_api.Repositories.Service
                 }
             }
             return categories;
+        }
+
+        public async Task<CategoryDto> GetCategoryByTextUrlAsync(string textUrl)
+        {
+            try
+            {
+                // Find category
+                CategoryDto categoryDto = await context.Categories
+                    .Where(c => c.TextUrl.Trim().ToLower() == textUrl.Trim().ToLower())
+                    .Select(c => new CategoryDto()
+                    {
+                        Id = c.Id,
+                        Name = c.Name,
+                        CategoryId = c.CategoryId,
+                        Icon = c.Icon,
+                        Level = c.Level,
+                        Order = c.Order,
+                        Publish = c.Publish,
+                        TextUrl = c.TextUrl
+                    }).SingleAsync();
+
+                if (categoryDto == null)
+                {
+                    throw new Exception("Category not found");
+                }
+                return categoryDto;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

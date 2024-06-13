@@ -12,20 +12,16 @@ namespace project_ecommerce_api.DTOs
 
         public string Email { get; set; } = null!;
 
-        public string EmailConfirmed { get; set; } = null!;
-
-        public string PasswordHash { get; set; } = null!;
-
         public string Picture { get; set; } = null!;
 
         public bool IsActive { get; set; }
 
         public DateTime CreatedDate { get; set; }
 
-        public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
+        public string PhoneNumber { get; set; } = null!;
 
-        public virtual ICollection<CustomerAddress> CustomerAddresses { get; set; } = new List<CustomerAddress>();
+        public List<CustomerAddressDto> CustomerAddresses { get; set; } = new List<CustomerAddressDto>();
 
-        public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
+        public OrderDto? Order { get; set; }
     }
 }

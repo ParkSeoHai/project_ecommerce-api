@@ -83,6 +83,8 @@ public partial class ApplicationDbContext : DbContext
 
             entity.HasIndex(e => e.ProductId, "IX_CartItems_ProductId");
 
+            entity.Property(e => e.Option).HasDefaultValue("");
+
             entity.HasOne(d => d.Cart).WithMany(p => p.CartItems).HasForeignKey(d => d.CartId);
 
             entity.HasOne(d => d.Product).WithMany(p => p.CartItems).HasForeignKey(d => d.ProductId);
@@ -94,6 +96,7 @@ public partial class ApplicationDbContext : DbContext
 
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.Icon).HasMaxLength(500);
+            entity.Property(e => e.TextUrl).HasDefaultValue("");
         });
 
         modelBuilder.Entity<Color>(entity =>
@@ -226,6 +229,7 @@ public partial class ApplicationDbContext : DbContext
                 .HasMaxLength(500)
                 .HasDefaultValue("");
             entity.Property(e => e.Name).HasMaxLength(500);
+            entity.Property(e => e.TextUrl).HasDefaultValue("");
             entity.Property(e => e.UpdatedBy).HasMaxLength(500);
 
             entity.HasOne(d => d.Brand).WithMany(p => p.Products).HasForeignKey(d => d.BrandId);

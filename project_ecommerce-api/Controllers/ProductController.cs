@@ -66,12 +66,12 @@ namespace project_ecommerce_api.Controllers
         }
 
         [HttpGet]
-        [Route("GetProductByName")]
-        public async Task<IActionResult> GetProductByName(string name)
+        [Route("GetProductByTextUrl")]
+        public async Task<IActionResult> GetProductByTextUrl(string textUrl)
         {
             try
             {
-                var product = await productService.GetProductByNameAsync(name);
+                var product = await productService.GetProductByTextUrlAsync(textUrl);
                 return Ok(product);
             }
             catch (Exception)

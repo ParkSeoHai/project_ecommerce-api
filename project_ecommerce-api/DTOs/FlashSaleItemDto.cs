@@ -21,5 +21,7 @@
         public int QuantitySale { get; set; }
 
         public int QuantitySold { get; set; }
+
+        public string TextUrl { get; set; } = null!;
     }
 }

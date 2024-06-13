@@ -15,5 +15,11 @@ public partial class Category
 
     public string? Icon { get; set; }
 
+    public int Order { get; set; }
+
+    public bool Publish { get; set; }
+
+    public string TextUrl { get; set; } = null!;
+
     public virtual ICollection<Product> Products { get; set; } = new List<Product>();
 }

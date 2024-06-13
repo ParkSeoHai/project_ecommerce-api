@@ -11,5 +11,11 @@
         public int Level { get; set; }
 
         public string? Icon { get; set; }
+
+        public int Order { get; set; }
+
+        public bool Publish { get; set; }
+
+        public string TextUrl { get; set; } = null!;
     }
 }

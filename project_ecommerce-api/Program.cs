@@ -30,6 +30,7 @@ builder.Services.AddScoped<IBrand, BrandService>();
 builder.Services.AddScoped<IAddressShop, AddressShopService>();
 // Customer
 builder.Services.AddScoped<ICustomer, CustomerService>();
+builder.Services.AddScoped<ICart, CartService>();
 
 var app = builder.Build();
 

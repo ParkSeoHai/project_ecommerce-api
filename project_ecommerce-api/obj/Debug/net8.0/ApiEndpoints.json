@@ -42,6 +42,157 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "project_ecommerce_api.Controllers.CategoryController",
+    "Method": "GetCategoryByTextUrl",
+    "RelativePath": "api/Category/GetCategoryByTextUrl",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "textUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project_ecommerce_api.Controllers.CustomerController",
+    "Method": "AddCustomerAddress",
+    "RelativePath": "api/Customer/AddCustomerAddress",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerAddressDto",
+        "Type": "project_ecommerce_api.DTOs.CustomerAddressDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "project_ecommerce_api.DTOs.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "project_ecommerce_api.Controllers.CustomerController",
+    "Method": "AddItemCart",
+    "RelativePath": "api/Customer/AddItemCart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cartPostDto",
+        "Type": "project_ecommerce_api.DTOs.CartPostDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "project_ecommerce_api.DTOs.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "project_ecommerce_api.Controllers.CustomerController",
+    "Method": "DeleteCustomerAddress",
+    "RelativePath": "api/Customer/DeleteCustomerAddress",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addressId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "project_ecommerce_api.DTOs.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "project_ecommerce_api.Controllers.CustomerController",
+    "Method": "GetCartById",
+    "RelativePath": "api/Customer/GetCartById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "project_ecommerce_api.DTOs.ApiResponse\u00601[[project_ecommerce_api.DTOs.CartDto, project_ecommerce-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "project_ecommerce_api.Controllers.CustomerController",
+    "Method": "GetInfoByEmail",
+    "RelativePath": "api/Customer/GetInfo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "project_ecommerce_api.DTOs.ApiResponse\u00601[[project_ecommerce_api.DTOs.CustomerDto, project_ecommerce-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "project_ecommerce_api.Controllers.CustomerController",
     "Method": "Login",
     "RelativePath": "api/Customer/Login",
@@ -94,6 +245,94 @@
     ]
   },
   {
+    "ContainingType": "project_ecommerce_api.Controllers.CustomerController",
+    "Method": "RemoveItemCart",
+    "RelativePath": "api/Customer/RemoveItemCart",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cartId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "productUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "project_ecommerce_api.DTOs.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "project_ecommerce_api.Controllers.CustomerController",
+    "Method": "UpdateCustomerAddress",
+    "RelativePath": "api/Customer/UpdateCustomerAddress",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerAddressDto",
+        "Type": "project_ecommerce_api.DTOs.CustomerAddressDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "project_ecommerce_api.DTOs.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "project_ecommerce_api.Controllers.CustomerController",
+    "Method": "UpdateItemCart",
+    "RelativePath": "api/Customer/UpdateItemCart",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cartPostDto",
+        "Type": "project_ecommerce_api.DTOs.CartPostDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "project_ecommerce_api.DTOs.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "project_ecommerce_api.Controllers.ProductController",
     "Method": "Index",
     "RelativePath": "api/Product",
@@ -115,14 +354,14 @@
   },
   {
     "ContainingType": "project_ecommerce_api.Controllers.ProductController",
-    "Method": "GetProductByName",
-    "RelativePath": "api/Product/GetProductByName",
+    "Method": "GetProductByTextUrl",
+    "RelativePath": "api/Product/GetProductByTextUrl",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "name",
+        "Name": "textUrl",
         "Type": "System.String",
         "IsRequired": false
       }

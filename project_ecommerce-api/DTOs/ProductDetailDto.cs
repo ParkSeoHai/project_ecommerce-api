@@ -12,6 +12,7 @@
         public double PriceSale { get; set; }
         public int Discount { get; set; }
         public int Quantity { get; set; }
+        public string TextUrl { get; set; } = null!;
         public List<ProductImageDto> Images { get; set; } = new List<ProductImageDto>();
         public List<ProductColorDto> Colors { get; set; } = new List<ProductColorDto>();
         public List<PropertyDto> Properties { get; set; } = new List<PropertyDto>();

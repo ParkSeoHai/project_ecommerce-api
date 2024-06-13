@@ -51,6 +51,7 @@ namespace project_ecommerce_api.Repositories.Service
                         Discount = product.Discount,
                         Price = product.Price,
                         Quantity = product.Quantity,
+                        TextUrl = product.TextUrl,
                     };
                     // Get color
                     var colors = await colorService.GetColorsByProductIdAsync(product.Id);
@@ -137,6 +138,7 @@ namespace project_ecommerce_api.Repositories.Service
                         Discount = product.Discount,
                         Price = product.Price,
                         Quantity = product.Quantity,
+                        TextUrl = product.TextUrl
                     };
 
                     // Get color
@@ -194,7 +196,8 @@ namespace project_ecommerce_api.Repositories.Service
                     Price = item.Product.Price,
                     Quantity = item.Product.Quantity,
                     QuantitySale = item.FlashSaleItem.QuantitySale,
-                    QuantitySold = item.FlashSaleItem.QuantitySold
+                    QuantitySold = item.FlashSaleItem.QuantitySold,
+                    TextUrl = item.Product.TextUrl
                 };
                 // Get color
                 var colors = await colorService.GetColorsByProductIdAsync(item.Product.Id);
@@ -216,13 +219,13 @@ namespace project_ecommerce_api.Repositories.Service
             return flashSaleDto;
         }
 
-        public async Task<ProductDetailDto> GetProductByNameAsync(string name)
+        public async Task<ProductDetailDto> GetProductByTextUrlAsync(string textUrl)
         {
             try
             {
                 // Find product by name
                 Product? product = await context.Products
-                    .Where(p => p.Name.ToUpper() == name.ToUpper())
+                    .Where(p => p.TextUrl.Trim().ToLower() == textUrl.Trim().ToLower())
                     .FirstOrDefaultAsync();
 
                 if(product == null)
@@ -238,7 +241,8 @@ namespace project_ecommerce_api.Repositories.Service
                     Description = product.Description,
                     Discount = product.Discount,
                     Price = product.Price,
-                    Quantity = product.Quantity
+                    Quantity = product.Quantity,
+                    TextUrl = product.TextUrl
                 };
                 // Get brand
                 var brand = await brandService.GetBrandByIdAsycn(product.BrandId);
@@ -269,6 +273,30 @@ namespace project_ecommerce_api.Repositories.Service
                 var properties = await propertyService.GetPropertiesByProductIdAsync(productDto.Id);
                 productDto.Properties = properties;
                 return productDto;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public async Task<ProductViewDto?> GetProductByIdAsync(Guid id)
+        {
+            try
+            {
+                var product = await context.Products
+                    .Where(p => p.Id.Equals(id))
+                    .Select(p => new ProductViewDto()
+                    {
+                        Id = p.Id,
+                        Name = p.Name,
+                        Price = p.Price,
+                        DefaultImage = p.DefaultImage,
+                        Discount = p.Discount,
+                        Quantity = p.Quantity,
+                        TextUrl = p.TextUrl
+                    }).FirstOrDefaultAsync();
+                return product;
             }
             catch (Exception)
             {
